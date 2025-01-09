@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 public interface EmployeeDao {
-    void createEmployee() throws SQLException;
-    void addEmployee(Employee employee);
+    boolean createEmployee() throws SQLException;
+    String addEmployee(Employee employee);
     void dropTable();
     void cleanTable();
     void updateEmployee(Long id,Employee employee);
